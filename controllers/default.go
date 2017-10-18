@@ -40,6 +40,6 @@ func (c *MainController) Access() {
 	hashcode := string(xhashcode)
 
 	if hashcode == signature {
-		c.Ctx.WriteString(hashcode)
+		c.Ctx.WriteString(echostr)
 	}
 }
